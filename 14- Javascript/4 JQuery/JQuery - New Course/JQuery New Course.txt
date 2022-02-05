@@ -1,0 +1,51 @@
+JQuery selectors:
+
+https://teamtreehouse.com/library/selecting-page-elements-with-jquery
+
+In jquery se selecteaza prin aceleasi metode care se selecteaza si in CSS.
+Exemplu:
+$('ul');
+$('.clasa')
+$('#id');
+$('.clasa > .altaClasa');
+
+Pentru metode mai sofisticate de selectare a elementelor:
+https://api.jquery.com/category/traversing/filtering/
+
+=======
+
+Accessing and Modifying Attributes
+https://teamtreehouse.com/library/accessing-and-modifying-attributes
+
+Metoda  attr() se foloseste pentru a seta sau a obtine valoarea atributului unui element. Practic este si getter dar si setter. Primul argument este un string si este numele atributului pe care vrem sa il returneze iar al 2-lea este valoarea atributului pe care vrem sa o setam.
+
+Exemplu:
+$('element').attr('title', 'Am setat titlul!');
+
+======
+Metoda "ON()"
+Se recomanda sa folosesti metoda "on" pentru orice event handler pt ca se pot atasa multiple evenimente fara sa suprascrii codul
+
+Exemplu: $('element').on('click', function() {
+		//some code here
+});
+
+========
+
+.toggleClass() toggles a selected class depending on its state.
+
+
+====
+
+Traversing the DOM
+
+
+Cele mai populare metode de traversare a DOM-ului sunt:
+
+$('elemetn').parent() - selecteaza parintele elemetnului respectiv
+$('elemetn').find() - ne permite sa facem o mica cautare prin descendentii elementelor gasite.
+$('elemetn').next() 
+$('elemetn').prev()
+$('elemetn').siblings()
+
+$map() - metoda .map() ia o colectie de elemente si le trece printr-o functie iar apoi face un nou obiect cu rezultatul acelei functii.
