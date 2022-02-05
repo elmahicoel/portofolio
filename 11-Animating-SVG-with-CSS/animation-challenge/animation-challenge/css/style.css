@@ -1,0 +1,83 @@
+/* --------------------------
+  Base
+--------------------------- */
+
+body {
+  padding-top: 60px;
+	background: #0f4e7a;
+}
+
+svg {
+	margin: auto;
+  display: block;
+	width: 28%;
+}
+
+/* --------------------------
+  Keyframes
+--------------------------- */
+@keyframes stele {
+  0% {
+    transform: translateY(180px);
+}
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes marire {
+  0% {
+    transform: scale(1) rotate(0);
+
+    fill: #FFFFFF;
+  }
+  50% {
+    transform: scale(1.3) rotate(-6deg);
+    fill: yellow;
+  }
+  100% {
+  transform: scale(1) rotate(0);
+  fill: #FFFFFF;
+}
+}
+@keyframes cerc {
+  60% {
+    stroke-opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* --------------------------
+  SVG Styles
+--------------------------- */
+
+
+.star2,
+.star1,
+.star3 {
+  transform: translateY(180px);
+  transform-origin: 348px 356px;
+}
+
+.star2 {
+  animation: stele .4s cubic-bezier(0.175, 0.885, 0.320, 1.275) forwards, marire .3s 1.2s linear forwards;
+}
+
+.star1 {
+  animation: stele .4s .4s cubic-bezier(0.175, 0.885, 0.320, 1.275) forwards, marire .3s 1.4s linear forwards;
+}
+
+.star3 {
+  animation: stele .4s .8s cubic-bezier(0.175, 0.885, 0.320, 1.275) forwards, marire .3s 1.6s linear forwards;
+}
+
+.stars-bg {
+  stroke-width: 2;
+  stroke-opacity: 0;
+  stroke-dasharray: 815;
+  stroke-dashoffset: 815;
+  animation: cerc .8s 1.8s linear forwards;
+}

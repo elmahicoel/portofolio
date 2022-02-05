@@ -1,0 +1,40 @@
+/* --------------------------
+  Base
+--------------------------- */
+
+body {
+  background: #8069a1;
+  padding-top: 60px;
+}
+
+svg {
+	margin: auto;
+  display: block;
+}
+
+/* --------------------------
+  Keyframes
+--------------------------- */
+@keyframes grow {
+  0% {transform: scale(0);}
+  30% {transform: scale(1.1);}
+  60% {transform: scale(0.9);}
+}
+
+/* --------------------------
+  SVG Styles
+--------------------------- */
+.badge * { /* selecteaza toate elementele dinauntrul clasei badge .*/
+  transform-origin: 180px 180px;
+}
+.inner,
+.outer,
+.inline {
+  animation: grow 1s ease-out backwords;
+}
+.inner {
+  animation-delay: .1s;
+}
+.inline {
+  animation-delay: .15s;
+}
