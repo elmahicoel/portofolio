@@ -1,0 +1,27 @@
+/* FlexBox */
+
+
+.container {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.item {
+	flex-grow: 1;
+}
+
+.item-4 {
+	flex-grow: 3;
+}
+
+/*si asta */
+/*.item {
+	transition-duration: .5s;
+}*/
+
+/*asta e bagata in plus*/
+/*.item:hover {
+	background: tomato;
+}*/

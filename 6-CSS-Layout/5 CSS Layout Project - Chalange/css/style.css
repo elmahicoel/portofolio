@@ -1,0 +1,206 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+	margin: 0;
+}
+
+.name a,
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+.banner {
+	color: #fff;
+	background: #3acec2;
+	padding-bottom: 40px;
+	padding-top: 50px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.main-footer {
+	background: #d9e4ea;
+	padding: .8em 0;
+	margin-top: 30px;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+	margin: auto;
+}
+/* rezolvarea mea */
+
+.container {
+	width: 85%;
+	margin: 0 auto;
+}
+
+.main-header,
+.main-nav {
+	display: block;
+	text-align: center;
+}
+
+.col {
+	text-align: justify;
+	margin-top: 20px;
+}
+
+h2 {
+	text-align: center;
+}
+
+.main-footer {
+	text-align: center;
+}
+
+.social {
+	font-size: 1.8em;
+	color: #3acec2;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-bottom: 0;
+}
+.social:hover {
+	color: tomato;
+}
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	/*rezolvarea mea */
+	
+	h2 {
+	text-align: left;
+	}
+	.wrap {
+		min-height: calc(100vh - 89px);
+	}
+	.container {
+		width: 90%;
+		max-width: 1150px;
+		margin: 0 auto;
+	}
+	.name {
+		float: left;
+	}
+	.main-nav {
+		float: right;
+	}
+	.main-nav li {
+		float: left;
+		margin-right: 15px;
+		padding: 10px 20px;
+		
+	}
+	.banner {
+		text-align: center;
+		
+	}
+	.headline {
+		margin-bottom: 0;
+	}
+	.primary,
+	.secondary {
+		width: 50%;
+		display: inline-block;
+	}
+
+	.col {
+		float: left;
+		padding-right: 10px;
+		padding-left: 10px;
+		margin-top: 60px;
+	}
+	.main-footer {
+		text-align: center;
+	}
+}
+
+
+@media (min-width: 1024px) {
+
+	
+	.primary {
+		width: 40%;
+	}
+	.secondary {
+		width: 30%;
+	}
+	.tertiary {
+		width: 30%
+	}
+}
+
+
+
+/* Float Clearfix */
+.clearfix {
+	content: "";
+	display: table;
+	clear: both;
+}
