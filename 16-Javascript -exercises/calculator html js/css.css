@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+.titlu2 {
+    background: #333 ;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.calc-23 {
+    border: solid 5px #ececf2 ;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    padding-top: 5px;
+    padding-bottom: 5px;
+     border-radius: 5px;
+    font-size: 20px;
+     -webkit-animation-name: blinker;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+    -webkit-animation-duration: 1s;
+}
+
+.chenar-calc {
+    border: solid 5px #ececf2 ;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px
+}
+.icon-calendar-line {
+    padding: 10px;
+    font-size: 20px!important;
+    background: #941b1d;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 4px;
+    
+}
+
+.calc-pard {
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff 
+ }
+.calc-pard:after {
+    content: '';
+    display: block;
+    width: 170px;
+    height: 1px;
+    background: #df001b;
+    margin: 15px auto 0 auto;
+}
+
+.chenar-calc .linie-calc {
+    font-size: 12px !important;
+
+}
+
+.buton-calcs {
+    background: #c2002e !important; 
+    border: none !important;
+    padding: 5px 10px !important;
+    font-family: 'Roboto', sans-serif !important;
+    color: #fff;
+}
+
+.padding-0 {
+    padding: 0 !important;
+}
+
+.chenar-calc .linie-calc input {
+    margin: 0em;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    padding: 7px;
+    border-radius: 4px;
+    border: solid #fff 2px;
+    margin-bottom: 10px;
+    background: #B3B3B3;
+}

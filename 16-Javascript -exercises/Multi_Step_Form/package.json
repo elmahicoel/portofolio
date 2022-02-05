@@ -1,0 +1,21 @@
+{
+  "name": "multistepform",
+  "version": "1.0.0",
+  "description": "multistep form",
+  "main": "app.js",
+  "dependencies": {
+    "eslint": "^4.9.0"
+  },
+  "devDependencies": {
+    "eslint-config-google": "^0.9.1"
+  },
+  "scripts": {
+    "test": "run"
+  },
+  "keywords": [
+    "multistep",
+    "form"
+  ],
+  "author": "Lucian",
+  "license": "ISC"
+}

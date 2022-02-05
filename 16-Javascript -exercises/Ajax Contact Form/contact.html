@@ -1,0 +1,40 @@
+<h5>Pentru a verifica daca produsul se afla in stoc, completeaza formularul de mai jos si te vom contacta telefonic in maxim 30 de minute.</h5>
+<br>
+<br>
+<br>
+<form id="info-stoc" method="post" role="form">
+    <div class="messages"></div>
+    <div class="controls">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_name">Nume *</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Introdu numele" required="required" data-error="Campul este obligatoriu">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_telefon">Telefon *</label>
+                    <input id="form_telefon" type="text" name="telefon" class="form-control" placeholder="Introdu numarul de telefon" required="required" data-error="Campul este obligatoriu">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Introdu adresa de email" required="required" data-error="Campul este obligatoriu">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="form-stoc">
+            <div class="pull-left">
+                <button class="btn btn-primary" onclick="InfoStoc()">Trimite</button>
+            </div>
+        </div>
+     </div>
+    </div>
+</form>

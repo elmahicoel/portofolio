@@ -1,0 +1,51 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+
+					<div class=" titlu2">
+                		<div class="calc-23">Calculeaza-ti singur pretul!</div>
+                		<div class="chenar-calc">
+	                		<h3 class="calc-pard"><i class="icon-calendar-line"></i>Calculator Taiere Pardoseala :</h3>
+	                 		<div class="linie-calc">Grosime (cm) <input type="text" value="" id="g1"></div> 
+							<div class="linie-calc">Lungime (ml) <input type="text" value="" id="l1"></div>
+							<input type="button" onclick="c1()" value="OBTINETI COTATIA DE PRET" class="buton-calcs"><br>
+	  						<div id="r1"></div>
+						</div>
+						</div>
+
+
+
+						<div class="titlu2">
+								<div class="calc-23">Calculeaza-ti singur pretul!</div>
+								<div class="chenar-calc">
+									<h3 class="calc-pard"><i class="icon-calendar-line"></i>Calculator Taiere Perete :</h3>
+									<div class="linie-calc">Grosime (cm) <input type="text" value="" id="g2"></div>
+									<div class="linie-calc">Lungime (ml) <input type="text" value="" id="l2"></div>
+									<input type="button" onclick="c2()" value="OBTINETI COTATIA DE PRET" class="buton-calcs"><br>
+							  		<div id="r2"></div>
+		  						</div>
+        			</div>
+
+<!-- BEGIN SCRIPT CALCULATOR -->
+<script type="text/javascript">
+function c1(){
+	var p1 = document.getElementById('g1').value;
+	var p2 = document.getElementById('l1').value;
+	var r = p1 * (1/100) * p2 * 90;
+	document.getElementById('r1').innerHTML = "PRETUL APROXIMATIV ESTE DE LA "+r.toFixed(2)+" EURO FARA TVA";
+};
+function c2(){
+	var p1 = document.getElementById('g2').value;
+	var p2 = document.getElementById('l2').value;
+	var r = p1 * (1/100) * p2 * 120;
+	document.getElementById('r2').innerHTML = "PRETUL APROXIMATIV ESTE DE LA "+r.toFixed(2)+" EURO FARA TVA";
+};
+</script>
+<!-- END SCRIPT CALCULATOR -->
+
+</body>
+</html>
