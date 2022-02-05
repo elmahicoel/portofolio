@@ -1,0 +1,77 @@
+/* Attribute Selectors ------------- */
+.form-contact {
+	padding: 20px 24px;
+	background: #F4F7F8;
+}
+
+#container {
+	max-width: 500px;
+	margin: auto;
+}
+
+input[type="email"] {
+	background: #32d4e4;
+ }
+ 
+ 
+ a[target="_blank"] {
+	color: #39add1;
+	text-decoration: none;
+	border-bottom: 1px dotted;
+}
+
+
+/* DRY Classes ------------- */
+
+.br {
+	border-radius: .5em;
+}
+.avatar {
+	margin: 0 auto 2em;
+	display: block;
+}
+
+.rounded {
+	border-radius: 50%;
+}
+
+.button {
+	cursor: pointer;
+	font-size: .875em;
+	font-weight: 400;
+	color: #FFF;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-transform: uppercase;
+}
+
+.button:hover {
+	opacity: .75;
+}
+
+.default {
+	background-color: #52bab3;
+}
+
+.error {
+	background-color: #ff784F;
+}
+
+/* media query */
+
+@media (min-width: 769px) {
+	.inline {
+	width: auto;
+	display: inline-block;
+	}
+	
+	.button + .button {  /* doua elemente rude cu aceeasi clasa, uita-te la video-ul combinators	*/
+		margin-left: 20px;
+	}
+}
+
+/* Combinators */
+
+form > a {
+	font-size: .7em; /* descendent direct al elementuli fomr, deci il afecteaza direct experia */
+}

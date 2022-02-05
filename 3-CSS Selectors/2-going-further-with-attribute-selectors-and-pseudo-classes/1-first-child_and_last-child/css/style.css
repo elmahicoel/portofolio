@@ -1,0 +1,28 @@
+/* Structural Pseudo-classes------------------ */
+h1 {
+	text-align: center;
+}
+
+
+li:first-child {
+	background-color: #52bab3;
+	color: white;
+}
+
+span:only-child {
+	color: #52bab3;
+	font-size: 1.5em;
+}
+
+:empty {
+	background-color: tomato;
+}
+
+
+li:nth-child(-3n+4) {
+	background: #3c4d1f;
+}
+
+li:nth-of-type(2) {
+	background-color: #52bab3;
+}
