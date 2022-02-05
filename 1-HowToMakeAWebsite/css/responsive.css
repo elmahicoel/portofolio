@@ -1,0 +1,71 @@
+/* pentru ecranele mici */
+
+@media screen and (min-width: 480px) {
+	/**********************************
+	TWO COLOUMS layout
+	***********************************/
+	#primary {
+		width: 50%;
+		float: left;
+	}
+	
+	#secondary {
+		width: 40%;
+		float: right;
+	}
+	
+	
+	/**********************************
+	3 x 5 = 15%
+	100-15=85% spatiu disponibil sa il imparim in 3 coloane.
+	85/3 = 28.3333 perioada
+	***********************************/
+	/**********************************
+	PAGE: PORTFOLIO
+	***********************************/
+	#gallery li {
+		width: 28.3333%;
+		}
+	/**********************************
+	acum, va aparea o mica problema legata de coloane cand browserul devine mai mic si de aceea fiecare al 4-lea element se infasoara gresit ( it wraps ) din cauza textului care se extinde urat. Prin urmare folosim experia de jos pentru a putea corecta.
+	***********************************/
+	#gallery li:nth-child(4) {
+		clear: left;
+	}
+	/**********************************
+	PAGE: PORTFOLIO
+	***********************************/
+	.profile-picture {
+		float: left;
+		margin: 0 5% 80px 0;
+	}
+}
+
+/* pentru ecranele mari */
+@media screen and (min-width: 660px) {
+	nav {
+		background: none;
+		float: right;
+		font-size: 1.125em;
+		margin-right: 5%;
+		text-align: right;
+		width: 45%;
+	}
+	#logo {
+		float: left;
+		margin-left: 5%;
+		text-align: left;
+		width: 45%;
+	}
+	h1 {
+		font-size: 2.5em;
+	}
+	h2 {
+		font-size: 0.825em;
+		margin-bottom: 20px;
+		}
+	header {
+		border-bottom: 5px solid #599868;
+		margin-bottom: 60px;
+	}
+}

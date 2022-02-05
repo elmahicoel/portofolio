@@ -1,0 +1,113 @@
+/* Type Selectors ------------------ */
+body {
+  color: #878787;
+  margin: 0;
+  font: normal 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* echivalentul declaratiei de mai sus.
+  font-size: 1em;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   */
+}
+
+h1 {  
+  font-size: 5.625rem; /* 90px / 16px  */
+  color: rgb(255, 255, 255);
+  text-transform: uppercase; /* face texutul din h1 cu majuscule */
+  font-weight: normal;
+  line-height: 1.3;
+  
+}
+
+h2 {
+  font-size: 3.3125em; /*53px / 16px = 3.1235em */
+  text-decoration: none;
+  font-weight: normal;
+  margin-bottom: 0.5em; /* 26px /53px = 0.49 aprox 0.5em */
+}
+
+h3 {
+  font-size: 20px;
+  color: #48525c;
+  margin-bottom: 1.7em; /*34px */
+}
+
+/*
+li {
+	display: inline-block;
+	padding: 0px 12px;
+	border-right: 1px solid red;
+	margin-left: 0px;
+}
+ */
+ 
+/* Pseudo-classes ------------------ */
+
+a:link {
+  color: rgb(255, 169, 73);
+  text-decoration: none;
+}
+
+a:visited {
+  color: lightblue;
+}
+
+a:hover {
+  color: rgba(255, 169, 73, .4);
+}
+
+a:active {
+  color: lightcoral;
+}
+
+/* ID Selectors -------------------- */
+
+#main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: solid 10px #ffa949;
+}
+
+/* Class Selectors ----------------- */
+
+.main-header {
+  background-color: #ffa949;
+}
+
+.title {
+  color: white;
+  font-size: 1.625rem; /* 26px/16px */
+}
+
+.primary-content, 
+.secondary-content {
+  width: 60%;
+  margin: auto;
+}
+
+.callout {
+	font-size: 1.25em;
+	border-bottom: 3px solid;
+	padding: 0 9px 3px;
+	margin-top: 20px;
+	display: inline-block;
+}
+
+ /* aliniaza primari content si main header in centru */
+.primary-content,
+.main-header {
+  text-align: center;
+}
+
+.t-border {
+  border-top: 2px solid lightgrey; /* Top border styles */
+  margin-top: 10px;
+}
+
+.wildlife {
+	color: white;
+	background-color: #434a52;
+	padding: 18% 24%;
+	border-top: 10px solid #ffa949;
+	margin: 105px 0 60px;
+}

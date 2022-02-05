@@ -1,0 +1,22 @@
+.menu-bar ul ul {
+  display: none;
+}
+
+.menu-bar li:hover > ul {
+  display: block;
+}
+
+.menu-bar {
+	background: #52abab;
+	font-size: 30px;
+	margin: none;
+	width: 60%;
+}
+
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+	margin: 0;
+}

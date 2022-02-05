@@ -1,0 +1,341 @@
+1
+00:00:00,520 --> 00:00:04,270
+In the previous lesson we learned that
+classes are reusable, so
+
+2
+00:00:04,270 --> 00:00:08,860
+we're able to target more than one element
+with a single class selector.
+
+3
+00:00:08,860 --> 00:00:12,610
+Now the other thing we need to know about
+classes is that an element can
+
+4
+00:00:12,610 --> 00:00:15,730
+have multiple classes assigned to it.
+
+5
+00:00:15,730 --> 00:00:20,210
+So let's take a look at a practical use
+case for using multiple classes.
+
+6
+00:00:20,210 --> 00:00:25,060
+At times, we may have a lot of repeated
+CSS in our style sheets.
+
+7
+00:00:25,060 --> 00:00:29,900
+So sometimes, it's best to create classes
+for the repeated styles.
+
+8
+00:00:29,900 --> 00:00:32,450
+For instance, here's a simple example.
+
+9
+00:00:32,450 --> 00:00:36,390
+So let's say that our primary content in
+footer elements need to
+
+10
+00:00:36,390 --> 00:00:42,280
+have the same top border styles as the
+secondary content element.
+
+11
+00:00:42,280 --> 00:00:46,320
+Now should we repeat this border top
+property two more times in
+
+12
+00:00:46,320 --> 00:00:50,670
+our style sheet by adding it to the
+primary content and footer rules?
+
+13
+00:00:50,670 --> 00:00:53,450
+The short answer is, no we shouldn't.
+
+14
+00:00:53,450 --> 00:01:01,870
+So what if instead, we created a new class
+called t-border for top border.
+
+15
+00:01:03,040 --> 00:01:08,360
+Then, we'll add this border-top
+declaration to the .t-border rule.
+
+16
+00:01:08,360 --> 00:01:14,515
+So, I'll just go ahead and remove the one
+inside .secondary-content and
+
+17
+00:01:14,515 --> 00:01:18,870
+paste it inside the .t-border declaration
+block.
+
+18
+00:01:18,870 --> 00:01:21,450
+So now, we can save our style sheet, and
+
+19
+00:01:21,450 --> 00:01:26,790
+in our HTML we can add that .t-border
+class to those elements.
+
+20
+00:01:26,790 --> 00:01:35,460
+So right after the primary-content value,
+we'll add a space then write t-border.
+
+21
+00:01:35,460 --> 00:01:38,960
+And now we can do the same for our
+secondary-content class.
+
+22
+00:01:38,960 --> 00:01:42,770
+So we'll scroll down to the div on line
+24, and right
+
+23
+00:01:42,770 --> 00:01:49,080
+after that secondary content class we'll
+add a space, and add the t-border class.
+
+24
+00:01:49,080 --> 00:01:52,670
+So, for our footer, we'll need to add a
+class attribute,
+
+25
+00:01:52,670 --> 00:01:54,110
+because currently it only has an ID.
+
+26
+00:01:54,110 --> 00:01:59,850
+So, right after the ID of main footer,
+let's add a class attribute, and
+
+27
+00:01:59,850 --> 00:02:03,970
+then we'll make the value t-border.
+
+28
+00:02:03,970 --> 00:02:07,980
+Okay, so now when we save our index.html
+file and
+
+29
+00:02:07,980 --> 00:02:12,510
+refresh the preview, there we have the
+border styles in our primary content,
+
+30
+00:02:12,510 --> 00:02:16,420
+secondary content and main footer element.
+
+31
+00:02:16,420 --> 00:02:19,760
+And what's great is that we only had to
+write the top
+
+32
+00:02:19,760 --> 00:02:23,850
+border declarations once in our style
+sheet.
+
+33
+00:02:23,850 --> 00:02:27,660
+So doing this makes our CSS more
+maintainable,
+
+34
+00:02:27,660 --> 00:02:33,120
+especially on larger sites because we're
+not unnecessarily repeating lines of code.
+
+35
+00:02:33,120 --> 00:02:39,460
+So say we had to change the border color
+from lightgrey to something like blue.
+
+36
+00:02:39,460 --> 00:02:43,160
+Well instead of changing the color in
+three different selectors,
+
+37
+00:02:43,160 --> 00:02:45,230
+we only need to change it in one.
+
+38
+00:02:45,230 --> 00:02:46,740
+Now in a later course,
+
+39
+00:02:46,740 --> 00:02:51,810
+we'll get into the specifics of why we
+should avoid repeating a lot of CSS.
+
+40
+00:02:51,810 --> 00:02:56,370
+For now, just know that it makes things
+more maintainable for us.
+
+41
+00:02:56,370 --> 00:02:59,640
+So let's change our top border color back
+to lightgrey.
+
+42
+00:02:59,640 --> 00:03:04,300
+And since this secondary content rule is
+no longer in use, we can just go ahead and
+
+43
+00:03:04,300 --> 00:03:05,560
+delete it from our style sheet.
+
+44
+00:03:07,120 --> 00:03:11,480
+So one more important thing we need to
+know about class selectors is,
+
+45
+00:03:11,480 --> 00:03:16,150
+we're able to apply both a class and an ID
+to an element.
+
+46
+00:03:16,150 --> 00:03:19,620
+In fact, we did that earlier in the
+footer.
+
+47
+00:03:19,620 --> 00:03:24,000
+As we can see we have the ID of
+main-footer and the class of t-border.
+
+48
+00:03:24,000 --> 00:03:27,150
+And we did it up here in our header
+element.
+
+49
+00:03:27,150 --> 00:03:31,230
+We have an ID of top and a class of
+main-header.
+
+50
+00:03:31,230 --> 00:03:36,390
+But let's keep in mind that IDs carry more
+weight than classes,
+
+51
+00:03:36,390 --> 00:03:39,530
+because they refer to something very
+specific.
+
+52
+00:03:39,530 --> 00:03:44,010
+So if an element has an ID and a class
+applied,
+
+53
+00:03:44,010 --> 00:03:47,360
+the styles defined in the ID selector will
+always carry more
+
+54
+00:03:47,360 --> 00:03:51,580
+weight than the styles defined in the
+class selector.
+
+55
+00:03:51,580 --> 00:03:54,370
+And if we're not careful about how we use
+classes and
+
+56
+00:03:54,370 --> 00:03:58,060
+IDs, we can end up overriding styles in
+class selectors.
+
+57
+00:03:58,060 --> 00:04:01,370
+That's why we need to make sure we do not
+share the same
+
+58
+00:04:01,370 --> 00:04:03,992
+properties between classes and IDs.
+
+59
+00:04:03,992 --> 00:04:06,540
+And I'll show you a quick example of what
+can happen.
+
+60
+00:04:06,540 --> 00:04:09,775
+So back in our style sheet, if we scroll
+up,
+
+61
+00:04:09,775 --> 00:04:12,450
+I'll just write this above main-header.
+
+62
+00:04:12,450 --> 00:04:20,670
+If we target the ID of #top, then give the
+element a background color of red.
+
+63
+00:04:20,670 --> 00:04:25,480
+So we will say background-color, and make
+the value red.
+
+64
+00:04:25,480 --> 00:04:30,370
+When we save our style sheet and refresh
+the preview.
+
+65
+00:04:30,370 --> 00:04:32,820
+We can see how the red background color
+and
+
+66
+00:04:32,820 --> 00:04:37,520
+the ID overrides the one in the class
+selector.
+
+67
+00:04:37,520 --> 00:04:42,090
+So again, we need to make sure that
+elements are not sharing the same
+
+68
+00:04:42,090 --> 00:04:44,970
+properties in a class and an ID.
+
+69
+00:04:44,970 --> 00:04:48,696
+So I'm actually gonna remove the ID
+selector of #top, since we
+
+70
+00:04:48,696 --> 00:04:53,463
+don't want it conflicting and overriding
+the styles in the main-header class.
+
+71
+00:04:53,463 --> 00:04:59,219
+[BLANK_AUDIO]
+

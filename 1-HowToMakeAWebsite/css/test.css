@@ -1,0 +1,19 @@
+@media screen and (min-width: 480px) {
+	body {
+		background-color: #dbce84;
+	}
+}
+
+@media screen and (min-width: 800px){
+	body {
+		background-color: #639cfb;
+	}
+	
+}
+
+h3 {
+	text-align: center;
+	margin: 10px;
+	background-color: #ea4a4a;
+	
+}
